@@ -9,6 +9,7 @@
 <script>
 export default {
   props: {
+    name: "Container",
     propName: {
       type: Number,
       default: () => {}

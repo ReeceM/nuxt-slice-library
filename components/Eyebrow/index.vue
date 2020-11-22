@@ -1,7 +1,7 @@
 <template>
   <component
     :is="'span'"
-    class="uppercase mb-6 text-xs font-semibold"
+    class="text-base uppercase mb-6 tracking-wide text-xs font-semibold"
     :class="theme.color ? theme.color : 'text-green-500'">
     <slot />
   </component>
