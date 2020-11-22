@@ -1,0 +1,93 @@
+{
+  "id": "feature_section",
+  "type": "SharedSlice",
+  "name": "FeatureSection",
+  "description": "FeatureSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FeatureSection",
+      "primary": {
+        "eyebrow": {
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Line"
+          },
+          "type": "Text"
+        },
+        "title": {
+          "config": {
+            "allowTargetBlank": true,
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "allowTargetBlank": true,
+            "single": "paragraph,rtl",
+            "label": "Description",
+            "placeholder": "A nice description of your product"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "imagePosition": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "right",
+              "left"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "Feature Image",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 52,
+                "height": 52
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "heading": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,rtl"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}
