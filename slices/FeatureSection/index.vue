@@ -9,11 +9,13 @@
         <prismic-rich-text
           v-if="slice.primary.title"
           :field="slice.primary.title"
+          :class="theme.title"
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
         />
         <prismic-rich-text
           v-if="slice.primary.description"
           :field="slice.primary.description"
+          :class="theme.description"
           class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"
         />
       </div>
@@ -28,8 +30,8 @@
               <prismic-image class="block md:hidden" :field="feature.image.mobile" />
             </div>
             <div class="mx-auto mt-4">
-              <h2 class="font-semibold font-semibold text-gray-800 mb-2">{{ feature.heading }}</h2>
-              <prismic-rich-text :field="feature.description" class="text-gray-500"/>
+              <h2 class="font-semibold font-semibold text-gray-800 mb-2" :class="theme.featureTitle">{{ feature.heading }}</h2>
+              <prismic-rich-text :field="feature.description" class="text-gray-500" :class="theme.featureDescription"/>
             </div>
           </div>
         </div>

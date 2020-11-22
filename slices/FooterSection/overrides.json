@@ -1,6 +1,44 @@
 {
   "primary": {
-    "copyrightNotice": "ACME. All Rights Reserved."
+    "copyrightNotice": "ACME. All Rights Reserved.",
+    "social_buttons": [
+      {
+        "network": "instagram",
+        "icon":{
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/172b5eb6-3c1a-4459-84b7-3daf60c144a5_dT-3aKJyxvE.jpg"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "network": "twitter",
+        "icon":{
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/172b5eb6-3c1a-4459-84b7-3daf60c144a5_dT-3aKJyxvE.jpg"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://twitter.com/iexistin3d"
+        }
+      },
+      {
+        "network": "linkedin",
+        "icon":{
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/172b5eb6-3c1a-4459-84b7-3daf60c144a5_dT-3aKJyxvE.jpg"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ]
   },
   "items": [
     {

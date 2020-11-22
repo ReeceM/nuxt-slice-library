@@ -11,6 +11,7 @@ export default {
 const mocked = mocks[0]
 mocked.items = overrides.items;
 mocked.primary.copyrightNotice = overrides.primary.copyrightNotice;
+mocked.primary.social_buttons = overrides.primary.social_buttons;
 
 // mocked.items = mocked.items.map(item => {
 //   const title = item.title;
