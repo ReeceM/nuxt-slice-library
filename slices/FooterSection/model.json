@@ -1,0 +1,76 @@
+{
+  "id": "footer_section",
+  "type": "SharedSlice",
+  "name": "FooterSection",
+  "description": "FooterSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FooterSection",
+      "primary": {
+        "missionStatement": {
+          "config": {
+            "label": "Mission Statement",
+            "placeholder": "We promised to supply good anvils",
+            "allowTargetBlank": true,
+            "single": "paragraph,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "companyMark": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "companyMarkLink": {
+          "config": {
+            "label": "Logo Mark Link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "copyrightNotice": {
+          "config": {
+            "label": "Copyright Notice",
+            "placeholder": "ACME. All Rights Reserved."
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Group Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "id": "link"
+          }
+        },
+        "linkLabel": {
+          "config": {
+            "label": "Link Label",
+            "placeholder": "Products"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

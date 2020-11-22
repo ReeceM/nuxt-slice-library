@@ -1,0 +1,170 @@
+{
+  "primary": {
+    "copyrightNotice": "ACME. All Rights Reserved."
+  },
+  "items": [
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Solutions",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Anvils",
+      "linkImage": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.prismic.io/important-sm-images/172b5eb6-3c1a-4459-84b7-3daf60c144a5_dT-3aKJyxvE.jpg?w=900&h=500"
+      }
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Solutions",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Rockets"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Solutions",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Big Boxes"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Support",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Pricing"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Support",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Documentation"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Support",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "System Status"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Support",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Developer Docs"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Company",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "About Us"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Company",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Contact Us"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Company",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Careers"
+    },
+    {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Company",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "linkLabel": "Partners"
+    }
+  ]
+}
