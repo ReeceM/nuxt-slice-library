@@ -36,19 +36,38 @@
           "type": "Image"
         },
         "ctaLabel": {
+          "type": "Text",
           "config": {
-            "label": "CTA Label",
+            "label": "",
+            "id": "ctaLabel",
             "placeholder": ""
-          },
-          "type": "Text"
+          }
         },
         "ctaLink": {
+          "type": "Link",
           "config": {
-            "label": "CTA Link",
+            "label": "",
+            "id": "ctaLink",
             "placeholder": "",
             "allowTargetBlank": true
-          },
-          "type": "Link"
+          }
+        },
+        "secondaryLabel": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "secondaryLabel",
+            "placeholder": ""
+          }
+        },
+        "secondaryLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "secondaryLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
         }
       },
       "items": {}
