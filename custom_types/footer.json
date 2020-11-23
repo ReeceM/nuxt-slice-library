@@ -1,0 +1,23 @@
+{
+  "Footer": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "unique-identifier-eg-for-footer"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "footer_section": {
+            "type": "SharedSlice"
+          }
+        }
+      }
+    }
+  }
+}

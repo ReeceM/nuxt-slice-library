@@ -1,0 +1,23 @@
+{
+  "Header": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "unique-identifier-eg-for-header"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "nav_bar": {
+            "type": "SharedSlice"
+          }
+        }
+      }
+    }
+  }
+}
