@@ -10,10 +10,10 @@ To keep track of your progress and to be sure not to miss anything here's a simp
 
 - [x] My library contains at least **5 different slices**
 - [x] I have updated the [LICENSE](./LICENSE) to credit myself for my library
-- [x] The Storybook documentation is hosted here: <!-- https://example.com -->
+- [x] The Storybook documentation is hosted here: [https://stave-story.reecemay.me]
 - [x] My library does not contain any non-public licensed assets
 
-Some styling used from the Tailblocks library MIT Licensed [https://github.com/mertJF/tailblocks](https://github.com/mertJF/tailblocks), [license](https://github.com/mertJF/tailblocks/blob/master/LICENSE)
+I am not great with layouts and such in the css land, backend work mainly, so I have made use of some of the elements from the Tailblocks library MIT Licensed [https://github.com/mertJF/tailblocks](https://github.com/mertJF/tailblocks), [license](https://github.com/mertJF/tailblocks/blob/master/LICENSE)
 
 > ☝️ For comprehensive rules refer to the contest [blog post](https://prismic.io/blog/slice-contest?utm_campaign=devexp&utm_source=github&utm_medium=slicecontestpost).
 
