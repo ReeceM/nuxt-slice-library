@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import { Eyebrow, Container } from '@/components';
+import { Eyebrow, Container } from '../../components';
 import { commonProps } from '../../utils';
 import sortBy from 'lodash/sortBy'
 
