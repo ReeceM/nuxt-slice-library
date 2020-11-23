@@ -12,7 +12,7 @@
 <script>
   import {
     Container
-  } from '@/components'
+  } from '../../components'
   import {
     commonProps
   } from '../../utils'
