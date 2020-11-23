@@ -1,7 +1,7 @@
 {
-  "name": "slice-library-starter-nuxt",
-  "version": "0.0.0",
-  "description": "An awesome Slice Library made with Nuxt.js",
+  "name": "nuxt-slice-libraryt",
+  "version": "0.1.0",
+  "description": "Stave An awesome Slice Library made with Nuxt.js",
   "author": "@ReeceM",
   "license": "MIT",
   "main": "slices/index.js",

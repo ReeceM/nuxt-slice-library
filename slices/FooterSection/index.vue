@@ -6,7 +6,9 @@
       <div id="logo-mission" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <prismic-link class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
           :field="slice.primary.companyMarkLink">
-          <prismic-image class="w-10 h-10 text-white p-2 rounded-full"
+          <prismic-image
+            v-if="slice.primary.companyMark"
+            class="w-10 h-10 text-white p-2 rounded-full"
             :class="(theme.footer_image || null) ? theme.footer.image : 'bg-indigo-500'"
             :field="slice.primary.companyMark" />
         </prismic-link>

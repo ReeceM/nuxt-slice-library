@@ -66,6 +66,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [["@nuxtjs/prismic", {
     endpoint: smConfig.apiEndpoint || "",
+    preview: false,
     apiOptions: {
       routes: [{
         type: "page",
@@ -80,19 +81,19 @@ export default {
   storybook: {
     addons: ["@storybook/addon-knobs/register",],
     stories: ["~/slices/**/*.stories.js"],
-    // parameters: {
-    //   backgrounds: {
-    //     default: "white",
-    //     values: [
-    //       { name: "white", value: "#ffffff" },
-    //       { name: "yellow", value: "#FFFBEB" },
-    //       { name: "gray", value: "#F3F4F6" },
-    //     ],
-    //   }
-    // },
-    // webpackFinal(config) {
-    //   return config;
-    // }
+    parameters: {
+      backgrounds: {
+        default: "white",
+        values: [
+          { name: "white", value: "#ffffff" },
+          { name: "yellow", value: "#FFFBEB" },
+          { name: "gray", value: "#F3F4F6" },
+        ],
+      }
+    },
+    webpackFinal(config) {
+      return config;
+    }
   },
   ignore: ["**/*.stories.js"]
 }

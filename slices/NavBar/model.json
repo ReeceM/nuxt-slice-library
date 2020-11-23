@@ -26,20 +26,35 @@
           "type": "Image"
         },
         "title": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "id": "title",
+            "placeholder": "Stave"
           }
         },
-        "description": {
-          "type": "StructuredText",
+        "tagline": {
+          "type": "Text",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your product"
+            "label": "Tagline",
+            "id": "tagline",
+            "placeholder": "A barrel, but on the web"
           }
+        },
+        "ctaLabel": {
+          "config": {
+            "label": "Primary CTA Label button",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "ctaLink": {
+          "config": {
+            "label": "Primary CTA Link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       },
       "items": {
