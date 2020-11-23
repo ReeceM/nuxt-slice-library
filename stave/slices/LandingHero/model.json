@@ -38,7 +38,7 @@
         "ctaLabel": {
           "type": "Text",
           "config": {
-            "label": "",
+            "label": "CTA Label",
             "id": "ctaLabel",
             "placeholder": ""
           }
@@ -46,7 +46,7 @@
         "ctaLink": {
           "type": "Link",
           "config": {
-            "label": "",
+            "label": "CTA Link",
             "id": "ctaLink",
             "placeholder": "",
             "allowTargetBlank": true
@@ -55,7 +55,7 @@
         "secondaryLabel": {
           "type": "Text",
           "config": {
-            "label": "",
+            "label": "Secondary Link Label",
             "id": "secondaryLabel",
             "placeholder": ""
           }
@@ -63,7 +63,7 @@
         "secondaryLink": {
           "type": "Link",
           "config": {
-            "label": "",
+            "label": "Secondary Link",
             "id": "secondaryLink",
             "placeholder": "",
             "allowTargetBlank": true
