@@ -10,7 +10,7 @@ export default {
   target: "static",
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "slice-library-starter-nuxt",
+    title: "Stave | Prismic Slice Library",
     meta: [{
       charset: "utf-8"
     }, {
@@ -19,12 +19,26 @@ export default {
     }, {
       hid: "description",
       name: "description",
-      content: ""
+      content: "Stave - Prisimic Slice Library, entry for the #slicecontest"
+    },
+    {
+      hid: "og_author",
+      name: "og:author",
+      content: "Reece M"
+    },
+    {
+      hid: "twitter:site",
+      name: "twitter:site",
+      content: "@iexistin3d"
     }],
     link: [{
       rel: "icon",
       type: "image/x-icon",
       href: "/favicon.ico"
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Inter:300,400,700,900'
     }]
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
