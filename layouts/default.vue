@@ -1,19 +1,8 @@
 <template>
   <div>
-    <slice-zone type="header" uid="header"></slice-zone>
     <Nuxt />
-    <slice-zone type="footer" uid="footer"></slice-zone>
   </div>
 </template>
-<script>
-import SliceZone from "vue-slicezone";
-
-  export default {
-    components: {
-      SliceZone
-    }
-  }
-</script>
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",

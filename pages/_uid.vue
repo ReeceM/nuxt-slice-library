@@ -3,7 +3,11 @@ Looking for more information about the Slice Zone? Here's the documentation abou
 https://www.slicemachine.dev/documentation/nuxt/add-the-slice-zone-to-your-page
 -->
 <template>
-  <slice-zone type="page" :uid="$route.params.uid" />
+  <div>
+    <slice-zone type="header" uid="header"></slice-zone>
+    <slice-zone type="page" :uid="$route.params.uid" />
+    <slice-zone type="footer" uid="footer"></slice-zone>
+  </div>
 </template>
 
 <script>
