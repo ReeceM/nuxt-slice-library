@@ -1,5 +1,5 @@
 <template>
-  <container :style="{'backgroundColor': slice.primary.backgroundColor}">
+  <container :style="{'backgroundColor': slice.primary.backgroundColor ? slice.primary.backgroundColor : ''}">
     <div class="flex flex-col items-center">
       <div class="text-center">
         <eyebrow :theme="theme.eyebrow">
@@ -19,26 +19,22 @@
           class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"
         />
       </div>
-      <div v-if="slice.items.length" class="mt-10">
-        <div class="flex items-center">
-          <div class="space-y-8 md:space-y-5 md:grid md:grid-cols-2 md:gap-10">
-            <div class="inline-flex" v-for="(item, index) in items" :key="index">
-              <prismic-link class="text-white bg-green-600 font-bold py-3 px-5 mb-4 sm:mb-0 rounded inline-block hover:bg-green-700 box-content text-base mt-4 mx-auto" :fields="item.link">{{item.linkLabe}}</prismic-link>
-            </div>
-          </div>
-        </div>
-        <div id="feature" class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-10">
-          <div
-            class="flex flex-col"
-            v-for="(feature, index) in slice.items" :key="index"
-            >
-            <div class="mx-auto">
-              <prismic-image class="hidden md:block" :field="feature.image" />
-              <prismic-image class="block md:hidden" :field="feature.image.mobile" />
-            </div>
-            <div class="mx-auto mt-4">
-              <h2 class="font-semibold font-semibold text-gray-800 mb-2" :class="theme.featureTitle">{{ feature.heading }}</h2>
-              <prismic-rich-text :field="feature.description" class="text-gray-500" :class="theme.featureDescription"/>
+      <div v-if="slice.items" class="mt-10">
+        <div class="flex flex-shrink-0 align-center">
+          <div :class="{
+            'md:grid md:grid-cols-2 md:gap-10 flex flex-col items-center': slice.items.length > 1,
+            'flex justify-center': slice.items.length <= 1
+            }">
+            <div class="inline-block" v-for="(item, index) in sortedCta" :key="index">
+              <prismic-link
+                class="font-bold py-3 px-5 mb-4 sm:mb-0 rounded inline-block transform transition-colors duration-75 text-base mt-4 mx-auto cursor-pointer"
+                :class="{
+                  'text-white bg-green-400 hover:bg-green-600': item.primary,
+                  'text-green-700 border-green-300 border-2 hover:bg-green-400 hover:text-white ': !item.primary
+                }"
+                :field="item.ctaLink">
+                {{item.ctaLabel}}
+              </prismic-link>
             </div>
           </div>
         </div>
@@ -50,6 +46,7 @@
 <script>
 import { Eyebrow, Container } from '@/components';
 import { commonProps } from '../../utils';
+import sortBy from 'lodash/sortBy'
 
 export default {
   components: {
@@ -58,6 +55,13 @@ export default {
   },
   props: {
     ... commonProps
+  },
+  computed: {
+    sortedCta() {
+      return this.slice.items
+        ? sortBy(this.slice.items, (value) => {return value.primary !== true;})
+        : null
+    }
   },
 }
 </script>

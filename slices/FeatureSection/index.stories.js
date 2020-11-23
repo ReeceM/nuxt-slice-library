@@ -10,6 +10,7 @@ import Slice from './';
 import model from './model';
 import mocks from './mocks.json';
 import SliceZone from 'vue-slicezone';
+import { cloneDeep } from "lodash";
 
 export default {
   title: model.name,
@@ -26,9 +27,6 @@ export const DefaultSlice = () => ({
       resolver() {
         return Slice;
       },
-      theme: {
-        eyebrow: null,
-      }
     };
   },
   props: {
@@ -36,23 +34,9 @@ export const DefaultSlice = () => ({
       default: (() => {
         const _mock = cloneDeep(mocks[0]);
 
-        _mock.primary.missionStatement[0].text = text(
-          "Mission Statement",
-          _mock.primary.missionStatement[0].text
-        );
-        _mock.primary.companyMark.url = text(
-          "Company Mark Image",
-          _mock.primary.companyMark.url
-        );
-
-        _mock.copyrightNotice = text(
-          'Copyright Notice',
-          _mock.primary.copyrightNotice?.config?.placeholde
-        );
-
-        _mock.primary.social_buttons = object(
-          "Social Buttons (blocks)",
-          overrides.social_buttons
+        _mock.primary.title[0].text = text(
+          'Title',
+          _mock.primary.title[0].text
         );
 
         _mock.items = object(
@@ -63,8 +47,32 @@ export const DefaultSlice = () => ({
         return _mock;
       })()
     },
+    theme: {
+      default: (() => {
+        const _theme = {
+          eyebrow: {
+            color: 'text-green-500'
+          }
+        }
+
+        _theme.eyebrow.color = text(
+          'Eyebrow Color',
+          'text-green-500'
+        );
+
+        return _theme
+      })()
+    }
   },
   template: '<slice-zone :slices="[ mock ]" :theme="theme" :resolver="resolver" />',
 });
+
+DefaultSlice.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false
+    }
+  }
+}
 
 DefaultSlice.storyName = mocks[0].name;

@@ -6,9 +6,9 @@
   "variations": [
     {
       "id": "default-slice",
-      "name": "Default slice",
+      "name": "Default Slice",
       "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
+      "version": "sktwi1xtmkfgx8236",
       "description": "FeatureSection",
       "primary": {
         "eyebrow": {
@@ -43,6 +43,14 @@
             "thumbnails": []
           },
           "type": "Image"
+        },
+        "eyebrowColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "eyebrowColor",
+            "placeholder": ""
+          }
         }
       },
       "items": {
@@ -62,15 +70,15 @@
         },
         "heading": {
           "config": {
-            "label": "",
-            "placeholder": ""
+            "label": "Heading",
+            "placeholder": "An Awesome feature"
           },
           "type": "Text"
         },
         "description": {
           "config": {
-            "label": "",
-            "placeholder": "",
+            "label": "Description",
+            "placeholder": "Description of this awesome feature",
             "allowTargetBlank": true,
             "single": "paragraph,rtl"
           },

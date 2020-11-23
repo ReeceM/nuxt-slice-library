@@ -11,7 +11,7 @@ import model from './model';
 import mocks from './mocks.json';
 import overrides from './overrides.json';
 import SliceZone from 'vue-slicezone';
-
+import { cloneDeep } from 'lodash';
 export default {
   title: model.name,
   decorators: [withKnobs]
@@ -54,10 +54,12 @@ export const DefaultSlice = () => ({
           "Mission Statement",
           _mock.primary.missionStatement[0].text
         );
+
         _mock.primary.companyMark.url = text(
           "Company Mark Image",
-          _mock.primary.companyMark.url
+          overrides.primary.companyMark.url /*_mock.primary.companyMark.url */
         );
+
         _mock.copyrightNotice = text(
           'Copyright Notice',
           _mock.primary.copyrightNotice?.config?.placeholde
@@ -70,7 +72,7 @@ export const DefaultSlice = () => ({
 
         _mock.items = object(
           "Items (blocks)",
-          _mock.items
+          overrides.items
         );
 
         return _mock;
@@ -79,5 +81,14 @@ export const DefaultSlice = () => ({
   },
   template: '<slice-zone :slices="[ mock ]" :resolver="resolver" />',
 });
+
+DefaultSlice.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false
+    }
+  }
+}
+
 
 DefaultSlice.storyName = mocks[0].name;
