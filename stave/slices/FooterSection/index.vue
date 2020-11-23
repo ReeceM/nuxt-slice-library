@@ -42,7 +42,7 @@
 
   import {
     SocialIcon
-  } from '@/components'
+  } from '../../components'
 
   import {
     commonProps

@@ -42,7 +42,7 @@
   </container>
 </template>
 <script>
-import { Eyebrow, Container } from '@/components';
+import { Eyebrow, Container } from '../../components';
 import { commonProps } from '../../utils';
 
 export default {

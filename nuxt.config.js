@@ -48,8 +48,8 @@ export default {
       purge: {
         enabled: process.env.NODE_ENV === 'production',
         content: [
-          'components/**/*.vue',
-          'slices/**/*.vue',
+          'stave/components/**/*.vue',
+          'stave/slices/**/*.vue',
           'layouts/**/*.vue',
           'pages/**/*.vue',
         ]
@@ -80,7 +80,7 @@ export default {
   },
   storybook: {
     addons: ["@storybook/addon-knobs/register",],
-    stories: ["~/slices/**/*.stories.js"],
+    stories: ["~/stave/slices/**/*.stories.js"],
     parameters: {
       backgrounds: {
         default: "white",

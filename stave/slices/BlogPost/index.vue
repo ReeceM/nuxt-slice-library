@@ -4,7 +4,7 @@
       <p>
         <prismic-rich-text :field="slice.primary.title" class="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"/>
         <prismic-rich-text :field="slice.primary.description" class="text-sm tracking-wide text-gray-500 mt-5" />
-
+        <prismic-date :field="slice.primary.publishedAt" class="text-xs mt-4 tracking-wide text-gray-600"></prismic-date>
       </p>
       <div class="h-2 w-32 bg-teal-400 my-4 p-1" />
       <prismic-rich-text  class="prose lg:prose-xl mt-10" :field="slice.primary.post"/>
@@ -14,7 +14,7 @@
 <script>
 import {
   Container
-  } from '@/components';
+  } from '../../components';
 
 export default {
   components: {
