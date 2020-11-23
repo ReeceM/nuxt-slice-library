@@ -8,14 +8,14 @@
             <prismic-rich-text class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
               :field="slice.primary.title" />
             <prismic-rich-text class="mb-8 leading-relaxed" :field="slice.primary.description" />
-            <div class="flex justify-center md:space-x-3" v-if="slice.items">
+            <div class="flex justify-center flex-col md:flex-row md:space-x-3" v-if="slice.items">
               <prismic-link
-                class="inline-flex py-2 px-6 rounded text-lg cursor-pointer text-white bg-green-400 hover:bg-green-600"
+                class="inline-flex py-2 px-6 rounded justify-center text-lg cursor-pointer text-white bg-green-400 hover:bg-green-600"
                 :field="slice.primary.ctaLink">
                 {{slice.primary.ctaLabel}}
               </prismic-link>
               <prismic-link
-                class="inline-flex py-2 px-6 rounded text-lg cursor-pointer text-green-700 border-green-300 border-2 hover:bg-green-400 hover:text-white "
+                class="inline-flex py-2 px-6 rounded justify-center text-lg mt-3 md:mt-0 cursor-pointer text-green-700 border-green-300 border-2 hover:bg-green-400 hover:text-white "
                 :field="slice.primary.secondaryLink">
                 {{slice.primary.secondaryLabel}}
               </prismic-link>

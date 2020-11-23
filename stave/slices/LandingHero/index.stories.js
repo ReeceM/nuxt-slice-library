@@ -32,9 +32,9 @@ export const DefaultSlice = () => ({
       default: (() => {
         const _mock = cloneDeep(mocks[0]);
 
-        _mock.primary.title = text(
+        _mock.primary.title[0].text = text(
           'Title',
-          _mock.primary.title
+          _mock.primary.title[0].text
         );
         _mock.primary.description[0].text = text(
           'Descirption',
@@ -69,22 +69,6 @@ export const DefaultSlice = () => ({
         return _mock;
       })()
     },
-    // theme: {
-    //   default: (() => {
-    //     const _theme = {
-    //       eyebrow: {
-    //         color: 'text-green-500'
-    //       }
-    //     }
-
-    //     _theme.eyebrow.color = text(
-    //       'Eyebrow Color',
-    //       'text-green-500'
-    //     );
-
-    //     return _theme
-    //   })()
-    // }
   },
   template: '<slice-zone :slices="[ mock ]" :resolver="resolver" />',
 });
