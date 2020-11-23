@@ -1,0 +1,8 @@
+{
+  "libraryName": "Stave Slice Library",
+  "framework": "nuxt",
+  "gitUrl": "https://github.com/ReeceM/nuxt-slice-library",
+  "pathToLibrary": "stave/slices",
+  "dependencies": [],
+  "devDependencies": []
+}
