@@ -1,0 +1,73 @@
+{
+  "id": "nav_bar",
+  "type": "SharedSlice",
+  "name": "NavBar",
+  "description": "NavBar",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "NavBar",
+      "primary": {
+        "icon": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "small_mark",
+                "width": 45,
+                "height": 45
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your product"
+          }
+        }
+      },
+      "items": {
+        "linkLabel": {
+          "config": {
+            "label": "Link Label",
+            "placeholder": "About Us"
+          },
+          "type": "Text"
+        },
+        "navLink": {
+          "config": {
+            "label": "Navbar Link",
+            "placeholder": "http://example.com",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "linkIcon": {
+          "type": "Image",
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": [],
+            "id": "linkIcon"
+          }
+        }
+      }
+    }
+  ]
+}

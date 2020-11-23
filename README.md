@@ -1,4 +1,24 @@
-# Slice Library Nuxt.js Starter
+# Slice Library with Nuxt.js
+
+
+## ☑️ &nbsp;Submission Checklist
+
+To keep track of your progress and to be sure not to miss anything here's a simple checklist you can use. Once everything ticks you should be ready to submit your library to us by tagging [@prismicio](https://twitter.com/prismicio) with #SliceContest on Twitter.
+
+- [ ] My library contains at least **5 different slices**
+- [ ] I have updated the [LICENSE](./LICENSE) to credit myself for my library
+- [ ] The Storybook documentation is hosted here: <!-- https://example.com -->
+- [ ] My library does not contain any non-public licensed assets
+
+Some styling used from the Tailblocks library MIT Licensed [https://github.com/mertJF/tailblocks](https://github.com/mertJF/tailblocks), [license](https://github.com/mertJF/tailblocks/blob/master/LICENSE)
+
+> ☝️ For comprehensive rules refer to the contest [blog post](https://prismic.io/blog/slice-contest?utm_campaign=devexp&utm_source=github&utm_medium=slicecontestpost).
+
+
+
+## Contest Info
+Original Info from template repo
+
 
 > Looking for the React counterpart? [Check out the Next.js starter](https://github.com/prismicio-community/slice-library-starter-next#readme).
 
@@ -175,14 +195,3 @@ On the last build options step every default should be good and Nuxt.js should h
 Once the build is finished and successful, you should be redirected to a success page. The URL of the hosted documentation should be available through the "**Visit**" button. You can customize it by changing the site name under the "**Settings**" tab of the new site dashboard.
 
 Congratulations! You documentation is now hosted and will update itself whenever you commit to your repository.
-
-## ☑️ &nbsp;Submission Checklist
-
-To keep track of your progress and to be sure not to miss anything here's a simple checklist you can use. Once everything ticks you should be ready to submit your library to us by tagging [@prismicio](https://twitter.com/prismicio) with #SliceContest on Twitter.
-
-- [ ] My library contains at least **5 different slices**
-- [ ] I have updated the [LICENSE](./LICENSE) to credit myself for my library
-- [ ] The Storybook documentation is hosted here: <!-- https://example.com -->
-- [ ] My library does not contain any non-public licensed assets
-
-> ☝️ For comprehensive rules refer to the contest [blog post](https://prismic.io/blog/slice-contest?utm_campaign=devexp&utm_source=github&utm_medium=slicecontestpost).

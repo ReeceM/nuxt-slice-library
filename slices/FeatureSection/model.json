@@ -43,17 +43,6 @@
             "thumbnails": []
           },
           "type": "Image"
-        },
-        "imagePosition": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "options": [
-              "right",
-              "left"
-            ]
-          },
-          "type": "Select"
         }
       },
       "items": {

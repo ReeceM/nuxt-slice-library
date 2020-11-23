@@ -68,7 +68,21 @@ export default {
     transpile: ["vue-slicezone", "nuxt-sm"]
   },
   storybook: {
-    stories: ["~/slices/**/*.stories.js"]
+    addons: ["@storybook/addon-knobs/register",],
+    stories: ["~/slices/**/*.stories.js"],
+    // parameters: {
+    //   backgrounds: {
+    //     default: "white",
+    //     values: [
+    //       { name: "white", value: "#ffffff" },
+    //       { name: "yellow", value: "#FFFBEB" },
+    //       { name: "gray", value: "#F3F4F6" },
+    //     ],
+    //   }
+    // },
+    // webpackFinal(config) {
+    //   return config;
+    // }
   },
   ignore: ["**/*.stories.js"]
-};
+}

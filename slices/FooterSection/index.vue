@@ -22,7 +22,7 @@
       <div class="container md:mx-auto px-3 py-4 flex flex-col sm:flex-row">
         <p class="text-gray-500 text-sm text-center sm:text-left">&copy; {{ (new Date).getFullYear() }}
           {{ slice.primary.copyrightNotice }}</p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 space-x-2 justify-center sm:justify-start">
+        <span v-if="slice.primary.social_buttons" class="inline-flex sm:ml-auto sm:mt-0 mt-2 space-x-2 justify-center sm:justify-start">
             <prismic-link v-for="(social, index) in slice.primary.social_buttons" :key="index" class="text-gray-500"
               :field="social.link">
               <social-icon :type="social.network"/>
@@ -52,7 +52,7 @@
       SocialIcon
     },
     props: {
-      ...commonProps,
+      ...commonProps
     },
     computed: {
       groupedLinks() {

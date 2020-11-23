@@ -1,0 +1,43 @@
+{
+  "id": "landing_hero",
+  "type": "SharedSlice",
+  "name": "LandingHero",
+  "description": "LandingHero",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "LandingHero",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your product"
+          }
+        },
+        "imagePosition": {
+          "type": "Image",
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": [],
+            "id": "imagePosition"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
