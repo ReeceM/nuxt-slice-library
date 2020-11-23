@@ -1,14 +1,17 @@
-# Slice Library with Nuxt.js
+# Stave Slice Library
 
+Slice Machine Library based on Nuxt and tailwindcss
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/746e6cea-7b03-45c4-9bfb-7c3028a8ca9d/deploy-status)](https://app.netlify.com/sites/confident-poitras-94dca2/deploys)
 
 ## ☑️ &nbsp;Submission Checklist
 
 To keep track of your progress and to be sure not to miss anything here's a simple checklist you can use. Once everything ticks you should be ready to submit your library to us by tagging [@prismicio](https://twitter.com/prismicio) with #SliceContest on Twitter.
 
-- [ ] My library contains at least **5 different slices**
-- [ ] I have updated the [LICENSE](./LICENSE) to credit myself for my library
-- [ ] The Storybook documentation is hosted here: <!-- https://example.com -->
-- [ ] My library does not contain any non-public licensed assets
+- [x] My library contains at least **5 different slices**
+- [x] I have updated the [LICENSE](./LICENSE) to credit myself for my library
+- [x] The Storybook documentation is hosted here: <!-- https://example.com -->
+- [x] My library does not contain any non-public licensed assets
 
 Some styling used from the Tailblocks library MIT Licensed [https://github.com/mertJF/tailblocks](https://github.com/mertJF/tailblocks), [license](https://github.com/mertJF/tailblocks/blob/master/LICENSE)
 
