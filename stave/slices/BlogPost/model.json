@@ -27,6 +27,21 @@
             "placeholder": "A nice description of your product"
           }
         },
+        "published": {
+          "config": {
+            "label": "Published at",
+            "placeholder": "2020-11-20"
+          },
+          "type": "Date"
+        },
+        "author": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "author",
+            "placeholder": ""
+          }
+        },
         "post": {
           "config": {
             "allowTargetBlank": true,
@@ -46,9 +61,28 @@
             "thumbnails": []
           },
           "type": "Image"
+        },
+        "authorDocument": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "authorDocument",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
         }
       },
-      "items": {}
+      "items": {
+        "blogPost": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "blogPost",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      }
     }
   ]
 }

@@ -27,14 +27,28 @@
             "placeholder": "A nice description of your product"
           }
         },
-        "imagePosition": {
-          "type": "Image",
+        "image": {
           "config": {
-            "label": "",
+            "label": "Image",
             "constraint": {},
-            "thumbnails": [],
-            "id": "imagePosition"
-          }
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "ctaLabel": {
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "ctaLink": {
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       },
       "items": {}

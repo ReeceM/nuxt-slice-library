@@ -1,8 +1,0 @@
-export { default as NavBar } from './NavBar'
-export { default as BlogPost } from './BlogPost'
-export { default as LandingHero } from './LandingHero'
-export { default as FeatureSection } from './FeatureSection'
-export { default as CtaSection } from './CtaSection'
-export { default as FooterSeciont } from './FooterSeciont'
-export { default as FooterSection } from './FooterSection'
-export { default as BlogCards } from './BlogCards'

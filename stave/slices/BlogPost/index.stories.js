@@ -1,4 +1,4 @@
-import Slice from './';
+import Slice from '.';
 import model from './model';
 import mocks from './mocks.json';
 import SliceZone from 'vue-slicezone';
@@ -23,5 +23,13 @@ export const DefaultSlice = () => ({
   },
   template: '<slice-zone :slices="[ mock ]" :resolver="resolver" />',
 });
+
+DefaultSlice.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false
+    }
+  }
+}
 
 DefaultSlice.storyName = mocks[0].name;

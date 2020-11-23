@@ -1,6 +1,6 @@
 {
   "libraries": [
-    "@/slices"
+    "@/stave/slices"
   ],
   "apiEndpoint": "https://nuxt-slice-library.cdn.prismic.io/api/v2",
   "storybook": "http://localhost:3003"
