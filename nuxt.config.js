@@ -79,7 +79,15 @@ export default {
     transpile: ["vue-slicezone", "nuxt-sm"]
   },
   storybook: {
-    addons: ["@storybook/addon-knobs/register",],
+    addons: [
+      "@storybook/addon-knobs/register",
+      {
+        name: '@storybook/addon-essentials',
+        options: {
+          actions: false,
+        },
+      }
+    ],
     stories: ["~/stave/slices/**/*.stories.js"],
     parameters: {
       backgrounds: {
@@ -89,7 +97,8 @@ export default {
           { name: "yellow", value: "#FFFBEB" },
           { name: "gray", value: "#F3F4F6" },
         ],
-      }
+      },
+      layout: "fullscreen"
     },
     webpackFinal(config) {
       return config;
