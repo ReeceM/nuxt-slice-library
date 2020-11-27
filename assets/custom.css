@@ -1,0 +1,27 @@
+:root {
+  --style-link-color: #ec3f7a;
+}
+
+.style--link {
+	text-decoration: none;
+	position: relative;
+	padding: 0 10px;
+	transition: 0.25s ease-in-out all;
+	font-weight: 300;
+}
+
+.style--link::before {
+	content: '';
+	position: absolute;
+	background: var(--link-color);
+  bottom: 0;
+	width: 0px;
+	height: 10%;
+	left: 0;
+	transition: 0.2s ease-in-out all;
+	z-index: -1;
+}
+
+.style--link:hover::before {
+	width: 100%;
+}
