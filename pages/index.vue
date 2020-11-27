@@ -4,9 +4,9 @@ https://www.slicemachine.dev/documentation/nuxt/add-the-slice-zone-to-your-page
 -->
 <template>
   <div>
-    <slice-zone type="header" uid="header"></slice-zone>
+    <slice-zone type="header" uid="header" :theme="theme"></slice-zone>
     <slice-zone type="page" uid="home" />
-    <slice-zone type="footer" uid="footer"></slice-zone>
+    <slice-zone type="footer" uid="footer" :theme="theme"></slice-zone>
   </div>
 </template>
 
@@ -70,6 +70,24 @@ https://www.slicemachine.dev/documentation/nuxt/add-the-slice-zone-to-your-page
           content: "@iexistin3d"
         },
         ]
+      }
+    },
+    data: {
+      theme: {
+        hero_text_color: null, /* TW class name */
+        navBar: {
+          ctaColor: null, /* TW class name */
+        },
+        eyebrow: {
+          color: null /* TW class name */
+        },
+        title: null, /* TW class name */
+        description: null, /* TW class name */
+        featureTitle: null, /* TW class name */
+        featureDescription: null, /* TW class name */
+        footer_container: null, /* TW class name */
+        footer_image: null, /* TW class name */
+        copyNoticeBg: null, /* TW class name */
       }
     },
     async asyncData(context) {

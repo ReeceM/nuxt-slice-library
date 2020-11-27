@@ -9,7 +9,7 @@
           <prismic-image
             v-if="slice.primary.companyMark"
             class="w-10 h-10 text-white p-2 rounded-full"
-            :class="(theme.footer_image || null) ? theme.footer.image : 'bg-indigo-500'"
+            :class="(theme.footer_image || null) ? theme.footer_image : 'bg-indigo-500'"
             :field="slice.primary.companyMark" />
         </prismic-link>
         <prismic-rich-text class="mt-2 text-sm text-gray-500 " :field="slice.primary.missionStatement" />
